@@ -1,0 +1,9 @@
+auto-save-list/
+elpa/
+
+configuration.el
+history
+places
+projectile-bookmarks.eld
+
+*~
