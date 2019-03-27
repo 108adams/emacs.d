@@ -1,9 +1,13 @@
+*~
+
 auto-save-list/
 elpa/
+transient/
 
 configuration.el
 history
 places
 projectile-bookmarks.eld
+recentf
+smex-items
 
-*~
