@@ -8,11 +8,9 @@
   This file is based on [[https://raw.githubusercontent.com/mwfogleman/.emacs.d/master/michael.org][Miachael's]] and [[https://github.com/hrs/dotfiles/blob/master/emacs/.emacs.d/configuration.org][Harry's]] literate programming-based config
   files.
 
-  The reference base file I used for this one is stored [[file:init/Harry-configuration.org][here]].
+ - TODO [[*=ag=][=ag=]] setup on a machine that supports it
+ - TODO [[*Coq][Coq]] - grok once again
 
-** TODO re-read the source files and review the code excluded from this config
-** TODO [[*=ag=][=ag=]] setup on a machine that supports it
-** TODO [[*Coq][Coq]] - grok once again
 
 * init.el contents
 
