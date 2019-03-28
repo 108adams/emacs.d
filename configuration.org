@@ -396,19 +396,6 @@
                        sh-indentation 2)))
    #+END_SRC
 
-** YAML
-
-   #+BEGIN_SRC emacs-lisp
-     (use-package yaml-mode)
-   #+END_SRC
-
-   If I'm editing YAML I'm usually in a Rails project. I'd like to be able to run
-   the tests from any buffer.
-
-   #+BEGIN_SRC emacs-lisp
-     (add-hook 'yaml-mode-hook 'rspec-mode)
-   #+END_SRC
-
 ** Python
 
    Basic setup for org blocks
