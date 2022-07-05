@@ -43,7 +43,7 @@
     ("04232a0bfc50eac64c12471607090ecac9d7fd2d79e388f8543d1c5439ed81f5" default)))
  '(package-selected-packages
    (quote
-    (ob-ipython zenburn-theme counsel deft yasnippet yaml-mode which-key wgrep web-mode use-package undo-tree shut-up rainbow-delimiters paredit paradox org markdown-mode+ magit loop json-mode js2-mode graphviz-dot-mode gnuplot flycheck-package dired-hide-dotfiles diff-hl company auto-compile ag)))
+    (ob-ipython counsel deft yasnippet yaml-mode which-key wgrep web-mode use-package undo-tree shut-up rainbow-delimiters paredit paradox org markdown-mode+ magit loop json-mode js2-mode graphviz-dot-mode gnuplot flycheck-package dired-hide-dotfiles diff-hl company auto-compile ag)))
  '(undo-tree-visualizer-diff t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -51,7 +51,5 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-(load-theme 'zenburn t)
 
 ;;; init.el ends here

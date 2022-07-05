@@ -67,7 +67,6 @@
   ;; If there is more than one, they won't work right.
   )
 
-  (load-theme 'zenburn t)
 
   ;;; init.el ends here
 
@@ -104,7 +103,7 @@
    #+BEGIN_SRC emacs-lisp
      (tool-bar-mode 0)
      (menu-bar-mode 0)
-     (scroll-bar-mode -1)
+     ;; (scroll-bar-mode -1)
    #+END_SRC
 
    There's a tiny scroll bar that appears in the minibuffer window. This disables
@@ -284,10 +283,10 @@
      (add-hook 'web-mode-hook
                (lambda ()
                  (rainbow-mode)
-                 (rspec-mode)
+;;                 (rspec-mode)
                  (setq web-mode-markup-indent-offset 2)))
    #+END_SRC
-
+   
 ** JavaScript and ESLint
 
    [[http://codewinds.com/blog/2015-04-02-emacs-flycheck-eslint-jsx.html][JS setup source]]
