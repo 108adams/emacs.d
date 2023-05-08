@@ -163,7 +163,9 @@
    #+END_SRC
 
 ** =company=
-
+   Company is a text completion framework for Emacs. The name stands for "complete anything". 
+   It uses pluggable back-ends and front-ends to retrieve and display completion candidates.
+   
    Use =company-mode= everywhere.
 
    #+BEGIN_SRC emacs-lisp
@@ -178,6 +180,7 @@
    #+END_SRC
 
 ** =flycheck=
+   Flycheck is a modern on-the-fly syntax checking extension for GNU Emacs
 
    #+BEGIN_SRC emacs-lisp
      (use-package flycheck)
@@ -811,7 +814,7 @@
   Mac dired tweak:
 
   #+BEGIN_SRC emacs-lisp
-    (setq-default dired-use-ls-dired nil)
+;;    (setq-default dired-use-ls-dired nil)
   #+END_SRC
 
   These are the switches that get passed to =ls= when =dired= gets a list of

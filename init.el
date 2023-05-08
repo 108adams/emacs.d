@@ -7,10 +7,19 @@
 ;;; Code:
 ;; Configure package.el to include MELPA.
 (require 'package)
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
-(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+;;(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
+;;(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
+;;(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+;;(package-initialize)
+
+;; Hack for using a different set of repositories when ELPA is down
+(setq package-archives
+      '(("melpa" . "https://raw.githubusercontent.com/d12frosted/elpa-mirror/master/melpa/")
+        ("org"   . "https://raw.githubusercontent.com/d12frosted/elpa-mirror/master/org/")
+        ("gnu"   . "https://raw.githubusercontent.com/d12frosted/elpa-mirror/master/gnu/")))
+;; (setq package-check-signature nil) ;; probably not necessary
 (package-initialize)
+
 
 ;; Ensure that use-package is installed.
 ;;
@@ -39,11 +48,9 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   (quote
-    ("04232a0bfc50eac64c12471607090ecac9d7fd2d79e388f8543d1c5439ed81f5" default)))
+   '("04232a0bfc50eac64c12471607090ecac9d7fd2d79e388f8543d1c5439ed81f5" default))
  '(package-selected-packages
-   (quote
-    (ob-ipython counsel deft yasnippet yaml-mode which-key wgrep web-mode use-package undo-tree shut-up rainbow-delimiters paredit paradox org markdown-mode+ magit loop json-mode js2-mode graphviz-dot-mode gnuplot flycheck-package dired-hide-dotfiles diff-hl company auto-compile ag)))
+   '(ob-ipython counsel deft yasnippet yaml-mode which-key wgrep web-mode use-package undo-tree shut-up rainbow-delimiters paredit paradox org markdown-mode+ magit loop json-mode js2-mode graphviz-dot-mode gnuplot flycheck-package dired-hide-dotfiles diff-hl company auto-compile ag))
  '(undo-tree-visualizer-diff t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
